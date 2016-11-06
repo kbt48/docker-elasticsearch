@@ -1,0 +1,14 @@
+node00:
+    build: ./es_2.4
+    ports:
+        - 8082:9200
+        - 8083:9300
+    environment:
+        NODE_NAME: node0
+
+kibana:
+    build: ./kibana_4.6
+    ports:
+        - 8080:5601
+    environment:
+        ELASTICSEARCH_URL: http://www01.j-mon.net:8082

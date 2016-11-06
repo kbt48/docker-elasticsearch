@@ -1,0 +1,7 @@
+network.host: 0.0.0.0
+
+# clustering を行う場合は以下を参考の上、このファイルにconfigを書く
+# https://tech.recruit-mp.co.jp/infrastructure/docker-elasticsearch/
+#cluster.name: es-cluster
+#node.name: ${NODE_NAME}
+#discovery.zen.ping.unicast.hosts: [""]
